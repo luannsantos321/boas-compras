@@ -11,3 +11,9 @@ def lista(request):
     dados = {'lista': lista}
     return render(request, 'lista.html', dados)
 
+def submit(request):
+    if
+
+    return render(request,'cadstro.html', {'cadastro': cadastro})
+
+
