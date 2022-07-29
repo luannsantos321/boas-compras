@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Lista de compras</h1>
+    {% for lista in lista %} {% csrf_token %}
+        <ol>
+            <li>{{lista}}</li>
+        </ol>
+    {%endfor%}
+</body>
+</html>
