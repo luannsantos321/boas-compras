@@ -5,10 +5,10 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <form action="submit" method="POST">{% csrf_token %}
+    <form method="POST">{% csrf_token %}
 
-        <input type="text" id="produto" name="produto">
-        <button type="submit"><a href="{% url 'lista' %}">Enviar</a></button>
+            {{form}}<button type="submit">Enviar</button>
+
     </form>
 </body>
 </html>
