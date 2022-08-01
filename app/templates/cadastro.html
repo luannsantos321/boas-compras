@@ -5,10 +5,14 @@
     <title>Cadastro</title>
 </head>
 <body>
+<h1>Cadastre o item</h1>
+<button type="button"><a href="{% url 'inicio' %}">Voltar para o incio</a></button>
+<br>
+<br>
     <form method="POST">{% csrf_token %}
 
             {{form}}<button type="submit">Enviar</button>
-
+        <button type="button"><a href="{% url 'inicio' %}">Cancelar</a></button>
     </form>
 </body>
 </html>

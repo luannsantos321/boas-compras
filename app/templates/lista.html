@@ -6,10 +6,18 @@
 </head>
 <body>
     <h1>Lista de compras</h1>
-    {% for lista in lista %} {% csrf_token %}
+    {% csrf_token %}
+    <button type="button"><a href="{% url 'cadastro' %}">Novo intem:</a></button>
+    {% for lista in lista %}
         <ol>
-            <li>{{lista}}</li>
+
+                <li>{{lista}} <a href="{% url 'update_cadastro' lista.id %}">Editar</a>
+                    <a href="{% url 'delete_cadastro' lista.id%}">Delete</a>
+                </li>
+
         </ol>
+
     {%endfor%}
+<button type="button"><a href="{% url 'inicio' %}">Voltar</a></button>
 </body>
 </html>
