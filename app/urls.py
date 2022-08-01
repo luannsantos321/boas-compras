@@ -6,5 +6,6 @@ urlpatterns = [
     path('cadastro/', views.cadastro, name='cadastro'),
     path('lista/', views.lista, name='lista'),
     path('update/<int:id>/', views.update_cadastro, name='update_cadastro'),
-    path('delete/<int:id>/', views.delete_cadastro, name='delete_cadastro')
+    path('delete/<int:id>/', views.delete_cadastro, name='delete_cadastro'),
+    path('cadastro/delete_all/', views.delete_all, name='delete_all')
 ]

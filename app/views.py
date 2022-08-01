@@ -15,10 +15,12 @@ def cadastro(request):
 
     return render(request, 'cadastro.html', {'form': form})
 
+
 def lista(request):
     lista = Cadastro.objects.all()
     dados = {'lista': lista}
     return render(request, 'lista.html', dados)
+
 
 def update_cadastro(request, id):
     cadastro = Cadastro.objects.get(id=id)
@@ -35,4 +37,13 @@ def delete_cadastro(request, id):
     if request.method == 'POST':
         cadastro.delete()
         return redirect('lista')
+    return render(request, 'cadastro.html', {'cadastro': cadastro})
+
+def delete_all(request):
+    cadastro = Cadastro.objects.all()
+
+
+    if request.method == 'POST':
+        cadastro.delete()
+        return redirect('/')
     return render(request, 'cadastro.html', {'cadastro': cadastro})
