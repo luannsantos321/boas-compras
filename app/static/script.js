@@ -1,1 +1,2 @@
-alert("Olá, seja bem vindo!")
+/*alert("Olá, seja bem vindo!")*/
+
