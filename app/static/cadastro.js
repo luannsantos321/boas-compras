@@ -1,0 +1,1 @@
+alert("Vamos cadastrar um item:")
