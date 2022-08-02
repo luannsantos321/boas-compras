@@ -1,19 +1,35 @@
+body{
+background-color: #48e156;
+background-image: url(supermercado.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+
+background-top: 100%;
+background-botton: 100%;
+
+}
+
 h2{
 text-align: center;
+border-botton: 100%;
+
 }
 
 #veja_sua_lista{
 text-align: center;
 font-size: 30px;
+font-family: DejaVu Sans Mono;
+color: #ad75ad;
 }
 
 #cadastre{
 text-align: center;
 font-size: 30px;
+font-family: DejaVu Sans Mono;
+color: #ad75ad;
 }
 
 p{
 text-align: center;
-font-style: negrito;
-
 }
+

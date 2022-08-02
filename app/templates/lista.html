@@ -11,8 +11,10 @@
     {% for lista in lista %}
         <ol>
 
-                <li>{{lista}} <a href="{% url 'update_cadastro' lista.id %}">Editar</a>
-                    <a href="{% url 'delete_cadastro' lista.id%}">Delete</a>
+                <li><input type="checkbox">
+                    <a href="{% url 'update_cadastro' lista.id %}">{{lista}}</a>
+                    <input type="number" placeholder="valor">
+                    <button type="button"><a href="{% url 'delete_cadastro' lista.id%}">Delete</a></button
                 </li>
 
         </ol>
